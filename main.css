@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border-radius: 10px solid black;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:  100vw;
+    margin-top: 50px;
+}
+.circle {
+    border: 10px solid black;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    left: 650px;
+}
+.left {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+.right {
+    position: absolute;
+    top: 250px;
+    left: 800px;
+}
