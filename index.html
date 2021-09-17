@@ -6,22 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e8644e93da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_GQGHvQ0IZElC8RZVpacH5");
+      })();
+    </script>
   </head>
   <body>
-    <div class="content">
-      <img src="dota_logo.png" alt="logo" class="dota" />
+    <audio src="music/music.mp3" id="audio" loop></audio>
+    <ul class="music">
+      <li><i class="fas fa-music"></i></li>
+      <li class="hidden"><i class="fas fa-pause"></i></li>
+    </ul>
+    <div class="visiterName">
+      <div class="login visiter">
+        <p>회사명이나 이름, 닉네임을 입력해주세요</p>
+        <p class="sub-form">What is your name?</p>
+
+        <form>
+          <input type="text" name="name" placeholder="Name" maxlength="12" />
+        </form>
+      </div>
     </div>
-    <div class="diagram">
-      <div class="circle top">
-        <span id="text_1" class="gradientText gradient_HTML">개발적 역량</span>
-      </div>
-      <div class="circle left">
-        <span id="text_2" class="gradientText gradient_CSS">서비스 마인드</span>
-      </div>
-      <div class="circle right">
-        <span id="text_3" class="gradientText gradient_Javascript">공진용</span>
-      </div>
-    </div>
-    <script src="index.js"></script>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/email.js"></script>
   </body>
 </html>
+
+<!--
+<span id="text_1" class="gradientText gradient_HTML">개발적 역량</span>
+<span id="text_2" class="gradientText gradient_CSS">서비스 마인드</span>
+<span id="text_3" class="gradientText gradient_Javascript">공진용</span>
+<img src="dota_logo.png" alt="logo" class="dota" />
+-->

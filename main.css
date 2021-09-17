@@ -11,59 +11,95 @@
     }
 }
 
+.hidden {
+  display: none !important;
+}
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: antiquewhite;
     overflow: hidden;
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;    
     -webkit-background-clip: text;
-    color: transparent;      
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-.diagram {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
-    height: 100vh;
-    width:  100vw;
-}
-.circle {
-    border: 8px solid black;
-    height: 50vh;
-    width: 50vh;
-    padding: 110px;
-    border-radius: 50%;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    font-weight: bold;
-    font-size: 100px;
-    text-align: center;
-    font-weight: bolder;
-    line-height: 1;
-    align-items: center;
-    letter-spacing: 1rem;
+.visiterName,
+.purpose{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dota {
-    width: 200px;
-    height: 130px;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.top {
-    background-color: skyblue;
+
+.login p {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  margin: 5px;
+  animation: slide 1s ease-in-out 1s forwards;
+  margin-bottom: 10px;
 }
-.left {
+
+.login p:nth-child(1) {
+  font-size: 32px;
 }
-.right {
-} 
+
+@keyframes slide {
+  0% {
+      opacity: 0;
+      bottom: -20px;
+  }
+  100% {
+      opacity: 1;
+      bottom: 0;
+  }
+}
+
+.login input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  width: 270px;
+  height: 40px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 30px;
+  color: #fff;
+  opacity: 0;
+  animation-name: inputShow;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-bottom: 2px solid #ffffff;
+  cursor: initial;
+  padding-bottom: 5px;
+  cursor: default;
+}
+
+@keyframes inputShow {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+      
+  }
+}
 
 
 .gradientText {
@@ -102,3 +138,77 @@ body {
     content: "공진용";
     background-image: linear-gradient(to right, skyblue, blue );
   }
+
+  
+.music {
+  font-size: var(--fontsize-m);
+  position: fixed;
+  z-index: 999999;
+  width: 60px;
+  height: 60px;
+  background-color:#0c2e2b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: var(--space-xl);
+  border-radius: 50% 0 0 50%;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+.fa-music{
+margin-right: 30px;
+}
+.fa-pause{
+  margin-right: 30px;
+}
+.music:hover .fa-music {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+.music:hover {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+li {
+list-style-type: none;
+}
