@@ -13,7 +13,6 @@ function handleInitBtn() {
 
 function init() {
     document.querySelector(".initBtn").addEventListener("click", handleInitBtn);
-    setBackground();
 }
 
 init();
