@@ -21,6 +21,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;    
     -webkit-background-clip: text;
     background-color: skyblue;
+    overflow: scroll;
 }
 
 .visiterName,
@@ -257,7 +258,7 @@ list-style-type: none;
 .profiletext {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 10px;
   margin-left: 40px;
@@ -320,11 +321,16 @@ list-style-type: none;
 }
 
 .sectionborder {
-   margin-left: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.myreward {
+  margin-right: 50px;
+
+}
+
 .biginnerdia {
   width: 28px;
   height: 28px;
@@ -333,14 +339,16 @@ list-style-type: none;
 
 .whiteline {
   position: relative;
-  width: 90%;
+  width: 100%;
   border-bottom: 5px solid white;
-  top: -20px;
+  top: -22px;
   font-size: 32px;
 }
 
-.jinflix {
+.reward-image {
   margin-left: 130px;
+  display: flex;
+  flex-direction: column;
 }
 .jinflix-image {
   width: 450px;
@@ -358,4 +366,32 @@ list-style-type: none;
 }
 .jinflix-image:hover {
     opacity: 1;
+}
+
+.infotext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.overview {
+  font-size: 24px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.reward {
+  display: flex;
+  margin-bottom: 50px;
 }
