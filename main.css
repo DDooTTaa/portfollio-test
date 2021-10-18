@@ -20,6 +20,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;    
     -webkit-background-clip: text;
+    background-color: skyblue;
 }
 
 .visiterName,
@@ -104,7 +105,7 @@ body {
 
 .gradientText {
     position: relative;
-    background-image: linear-gradient(to right, #000, #000);
+    background-image: linear-gradient(to right, white,white);
     z-index: 1;
     -webkit-background-clip: text;
     color: transparent;
@@ -117,7 +118,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.1s ease-in-out;
     opacity: 0;
     -webkit-background-clip: text;
   }
@@ -127,16 +128,8 @@ body {
   }
 
   .gradient_HTML::before {
-    content: "개발적 역량";
-    background-image: linear-gradient(to right, #34e7e4, #ff0080);
-  }
-  .gradient_CSS::before {
-    content: "서비스 마인드";
-    background-image: linear-gradient(to right, #f9cb28, #ff0080);
-  }
-  .gradient_Javascript::before {
-    content: "공진용";
-    background-image: linear-gradient(to right, skyblue, blue );
+    content: "님 안녕하세요";
+    background-image: linear-gradient(to right, white, blue);
   }
 
   
@@ -225,4 +218,79 @@ list-style-type: none;
   font-size: 40px;
   text-shadow: 1px 1px 5px #000000;
   cursor: pointer;
+}
+
+#greeting {
+  color: white;
+  margin-left: 18px;
+
+}
+
+.visitor {
+  display: flex;
+  margin-top: 15px;
+  border-bottom: white 1px solid ;
+}
+
+.diamond {
+  width: 20px;
+  height: 20px;
+  background-color: whitesmoke;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.innerdia {
+  width: 11px;
+  height: 11px;
+  border: 2px solid black;
+}
+
+.profileContainer{
+  margin-top: 60px;
+  display: flex;
+}
+
+.profiletext {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  width: 100%;
+}
+
+.profiledetail {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  width: 100%;
+}
+
+.name {
+  margin-bottom: 30px;
+  position: relative;
+  left: 30px;
+}
+
+.birth {
+  margin-bottom: 30px;
+  position: relative;
+  left: 80px;
+}
+
+.git {
+  margin-bottom: 30px;
+  position: relative;
+  left: 120px;
+}
+
+.profile{
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-bottom: 1px solid white;
 }

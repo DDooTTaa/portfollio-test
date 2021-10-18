@@ -25,5 +25,5 @@ const runTransition = (id) => {
 textIds.forEach((id, index) => {
     setTimeout(() => {
         runTransition(id);
-    }, index * persist);
+    }, index);
 });

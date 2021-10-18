@@ -3,6 +3,7 @@ const loginInput = document.querySelector(".visiter input");
 const loginText = document.querySelector(".visiter p");
 const loginSubText = document.querySelector(".sub-form");
 const greeting = document.querySelector("#greeting");
+//const gradient = document.querySelector(".gradient_HTML");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -33,7 +34,8 @@ function onLoginSubmit(event) {
 
 function paintGreeting(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `${username} 안녕하세요 `;
+  greeting.innerHTML = `${username}`;
+  //  gradient.style = `content : ${username}`;
   loginForm.classList.add(HIDDEN_CLASSNAME);
 }
 
