@@ -52,9 +52,14 @@
     <div class="visitor">
       <h1 id="greeting" class="hidden"></h1>
       <br />
-      <h1 id="text_1" class="hello">님 안녕하세요</h1>
+      <h1 class="hello">님 안녕하세요</h1>
+    </div>
+    <div class="sectionborder profilebar">
+      <div class="diamond bigdia"><div class="biginnerdia"></div></div>
+      <h1 class="whiteline">프로필</h1>
     </div>
     <div class="profileContainer hidden">
+      <img class="main-photo" src="img/me.jpg" />
       <div class="profiletext">
         <div class="profiledetail name">
           <div class="diamond"><div class="innerdia"></div></div>
@@ -74,7 +79,6 @@
           </span>
         </div>
       </div>
-      <img class="main-photo" src="img/me.jpg" />
     </div>
     <section class="myreward hidden">
       <div class="sectionborder">
@@ -115,7 +119,7 @@
             <img class="reward-image" src="img/momentum.png" />
           </a>
           <div class="infotext">
-            <span class="title">My momentum (2021.05 ~ 2021.08)</span>
+            <span class="title">My Momentum (2021.05 ~ 2021.08)</span>
             <span class="overview"
               >자바스크립트를 이용하여 데이터가 Local 에 저장되는 todo List를
               만들었다.
@@ -141,7 +145,7 @@
           <div class="infotext">
             <span class="title">카카오톡 클론코딩 (2021.05 ~ 2021.06)</span>
             <span class="overview"
-              >HTML 과 CSS 를 사용해 카카오톡의 화면 구상을 코딩해보았다.
+              >HTML 과 CSS 를 사용해 카카오톡의 뷰를 클론했다.
               <ul>
                 <li>-Javascript 를 사용해 현재 시각을 가져온다</li>
               </ul>
@@ -151,10 +155,10 @@
         </div>
         <div class="reward">
           <a href="https://ddoottaa.github.io/My_momentum/" target="_blank">
-            <img class="reward-image" src="img/momentum.png" />
+            <img class="reward-image" src="img/dotacoin.png" />
           </a>
           <div class="infotext">
-            <span class="title">dota Coin (2021.09 ~ 2021.10)</span>
+            <span class="title">Dota Coin (2021.09 ~ 2021.10)</span>
             <span class="overview"
               >비트코인 API 를 사용해 비트코인에 대한 시세와 거레소를 찾을 수
               있는 페이지를 구현했다.
@@ -176,27 +180,64 @@
           </video>
           <div class="infotext">
             <span class="title"
-              >TexRank 기반의 한국어 기사 추출 및 텍스트 처리 사이트 (2021.03 ~
+              >TextRank 기반의 한국어 기사 추출 및 텍스트 처리 사이트 (2021.03 ~
               2021.07)</span
             >
             <span class="overview"
-              >한국어 기사를 입력하면 기사에서 3개의 중심문장을 추출하는
-              사이트를 구현했다. Spring Security를 통해 암호화된 회원가입을
-              구현했고
-
+              >텍스트 랭크를 사용한 중심 문장 추출을 통한 서비스와 사용자
+              이미지에 대한 한국어 OCR, 맞춤법 검사와 문장 생성을 가능케 하는<br />
+              통합 한국어 처리 서비스 사이트를 구현했다.
               <ul>
                 <li>-3분 40초부터 실행 화면을 볼 수 있다.</li>
-                <li>
-                  -자연어 처리 기능 구현을 구현하고 백과 프론트 작업을 기획 및
-                  관리했다.
-                </li>
+                <a
+                  href="https://github.com/DDooTTaa/SummurizeNews"
+                  target="_blank"
+                >
+                  <li>-깃허브 링크</li>
+                </a>
                 <a
                   href="http://www.koreascience.or.kr/article/CFKO202125036650411.page?&lang=ko"
+                  target="_blank"
                   ><li>-논문 링크</li></a
                 >
               </ul>
             </span>
             <span class="techStack">#Spring boot #tymeleaf #textrank</span>
+          </div>
+        </div>
+        <div class="reward">
+          <a
+            href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE07203733"
+            target="_blank"
+          >
+            <img class="reward-image" src="img/soundvisual.png" />
+          </a>
+          <div class="infotext">
+            <span class="title"
+              >청각장애인을 위한 사운드-시각화 및 재난 경보 웨어러블
+              시스템(2017.07)</span
+            >
+            <span class="overview"
+              >2학년 캡스톤 과제로 청각 장애인들은 시각에 의존하지 않고는 소리를
+              인지할 수 없다는 문제를 해결하기 위해 사운드를 시각화하는 웨어러블
+              시스템을 구현했다.
+
+              <ul>
+                <li>
+                  -음성인식 모듈에서 소리를 인식하면 학습된 소리(경적, 이름
+                  등)인지를 판단하게 된다.
+                </li>
+                <li>
+                  -학습된 소리라고 판단된 경우 시스템 인터럽트가 발생하고
+                  블루투스를 통해 스마트폰으로 데이터를 전송한다.
+                </li>
+                <li>
+                  -모바일 부는 재난 정보 API를 통해 새로운 값이 있으면
+                  모바일에서 메시지를 팝업한다.
+                </li>
+              </ul>
+            </span>
+            <span class="techStack">#arduino #bluetooth</span>
           </div>
         </div>
       </div>
@@ -217,9 +258,8 @@
 <span id="text_1" class="gradientText gradient_HTML">개발적 역량</span>
 <span id="text_2" class="gradientText gradient_CSS">서비스 마인드</span>
 <span id="text_3" class="gradientText gradient_Javascript">공진용</span>
-<img src="dota_logo.png" alt="logo" class="dota" />
--->
 
+<img src="dota_logo.png" alt="logo" class="dota" />
 <script type="text/javascript">
   $(document).ready(function () {
     emailjs.init("user_GQGHvQ0IZElC8RZVpacH5");
@@ -244,3 +284,5 @@
     });
   });
 </script>
+
+-->
