@@ -5,6 +5,7 @@ const loginSubText = document.querySelector(".sub-form");
 const greeting = document.querySelector("#greeting");
 const profile = document.querySelector(".profileContainer");
 const myreward = document.querySelector(".myreward");
+const sectionborder = document.querySelector(".sectionborder");
 
 //const gradient = document.querySelector(".gradient_HTML");
 
@@ -38,6 +39,7 @@ function paintGreeting(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   profile.classList.remove(HIDDEN_CLASSNAME);
   myreward.classList.remove(HIDDEN_CLASSNAME);
+  sectionborder.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerHTML = `${username}`;
   //  gradient.style = `content : ${username}`;
   loginForm.classList.add(HIDDEN_CLASSNAME);
